@@ -1,0 +1,42 @@
+.product-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    background-color: aqua;
+    width:96%;
+  }
+  
+  .product-item__description {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-end;
+    flex-flow: column-reverse;
+    justify-content: flex-start;
+    flex: 1;
+  }
+  
+  .product-item h2 {
+    color: yellow;
+    font-size: 2rem;
+    flex: 1;
+    margin: 0 1rem;
+    color: red;
+  }
+  
+.card-btn {
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: chartreuse;
+  border: 1px solid rgb(86, 168, 4);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+.card-btn:hover {
+  background-color: rgb(109, 214, 4);;
+  border: 1px solid chartreuse;
+}
