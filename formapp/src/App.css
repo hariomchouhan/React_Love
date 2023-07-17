@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin: 2rem auto;
+  gap: 5px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
