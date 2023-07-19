@@ -5,6 +5,7 @@ const Labs = () => {
 
   const navigate = useNavigate();
   const clickHandler = () => {
+    // move to about page
     navigate("/about");
   }
   return (
