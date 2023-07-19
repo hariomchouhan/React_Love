@@ -5,6 +5,7 @@ import About from "./components/About";
 import Support from "./components/Support";
 import Labs from "./components/Labs";
 import NotFound from "./components/NotFound";
+import MainHeader from "./components/MainHeader";
 
 function App() {
   return (
@@ -23,17 +24,13 @@ function App() {
           <li>
             <NavLink to="/labs">Labs</NavLink>
           </li>
-          <li>
-            <NavLink to="/first">first</NavLink>
-          </li>
-          <li>
-            <NavLink to="/second">second</NavLink>
-          </li>
         </ul>
       </nav>
 
       <Routes>
-        <Route path="/" element={<Home />}>
+        <Route path="/" element={<MainHeader />}>
+          {/* Default Route */}
+          <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/support" element={<Support />} />
           <Route path="/labs" element={<Labs />} />
